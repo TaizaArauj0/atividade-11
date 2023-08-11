@@ -1,6 +1,5 @@
 //bd.js
 import pkg from "pg";
-  export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario };
 const { Pool } = pkg;
 
 async function connect() {
@@ -44,4 +43,6 @@ async function updateUsuario(data) {
   const usuario = [data.nome, data.email, data.senha, data.id];
   await client.query(query, usuario);
 
-}
+} 
+//bd.js
+export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario };
