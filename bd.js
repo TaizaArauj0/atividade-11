@@ -34,3 +34,5 @@ app.get("/usuario/:id", async (req, res) => {
     res.status(error.status || 500).json({ message: error.message || "Erro!" });
   }
 });
+//bd.js
+export { selectUsuarios, selectUsuario };

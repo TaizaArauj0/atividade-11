@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import express from "express";
-import { selectUsuarios } from "./bd.js";      
+import { selectUsuarios, selectUsuario } from "./bd.js";      
 dotenv.config();
 
 // Requisição do pacote do express
@@ -28,4 +28,3 @@ app.get("/usuarios", async (req, res) => {
   }
 });
 
-import { selectUsuarios, selectUsuario } from "./bd.js";
