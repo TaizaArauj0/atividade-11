@@ -11,7 +11,7 @@ app.use(roteadorUsuario);
 
 app.get("/", (req, res) => {
   res.json({
-    message: "API para CRUD usuario: https://github.com/TaizaArauj0",
+    message: "API para CRUD usuario: TaizaArauj0",
   });
 });
 
