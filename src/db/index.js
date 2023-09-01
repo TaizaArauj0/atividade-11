@@ -8,9 +8,9 @@ async function connect() {
   return pool.connect();
 }
 
-async function selectUsuarios(id) {
+async function selectUsuarios() {
   const client = await connect();
-  const res = await client.query(query, usuario);
+  const res = await client.query("SELECT * FROM usuario");
   return res.rows;
 }
 
